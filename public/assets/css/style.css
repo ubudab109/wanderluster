@@ -189,6 +189,61 @@ section {
     padding-bottom: 54px;
 }
 
+.titlepage-statistik {
+    text-align: center;
+    padding-bottom: 54px;
+}
+
+.titlepage-statistik h2 {
+    padding: 10px 0px 20px 0px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #faba00;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    text-shadow: #2a2a2a;
+}
+
+
+.titlepage-statistik h2::after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.titlepage-statistik h2::before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.titlepage-statistik h2::after {
+     content: "";
+     position: absolute;
+     height: 5px;
+     border-top: 5px solid #ff5300;
+     top: 30px;
+     width: 300px;
+}
+
+.titlepage-statistik h2::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 5px solid #ff5300;
+    top: 30px;
+    width: 300px;
+}
+
+
+
+.titlepage-statistik p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
 .carousel-item .titlepage {
     text-align: center;
     padding-bottom: 54px;
@@ -203,8 +258,8 @@ section {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
+    margin-top: 30px;
 }
-
 
 .titlepage h2::after {
     left: 100%;
@@ -234,8 +289,6 @@ section {
     width: 100px;
 }
 
-
-
 .titlepage p {
     text-align: left;
     margin-top: -16px;
@@ -247,15 +300,11 @@ section {
 
 .d-block{
     border-radius: 5%;
-    /* height: 600px; */
+
 }
-
-
 .carousel-indicators .active {
     background-color: #ff5300; 
 }
-
-
 .carousel-caption h5{
     color: #fff; 
     padding: 20px; 
@@ -272,39 +321,93 @@ section {
     font-weight: 25px;
 }
 
+
 .statistics {
-    background-color: #f9f9f9;
+    background: #fff;
     padding: 50px 0;
 }
 
 .statistic-banner {
-    display: flex; /* Menjadikan konten berbaris */
-    justify-content: space-around; /* Menyusun konten secara horizontal */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     background-color: #fff;
+    border: 2px solid #ff5300;
     border-radius: 8px;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-    height: 153px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
 }
 
 .statistic-item {
-    flex: 1; /* Membuat setiap item memenuhi ruang yang tersedia */
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    margin-top: 18px;
 }
 
 .statistic-item h3 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #ff5300;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .statistic-item p {
-    font-size: 18px;
-    margin-bottom: 20px; /* Beri jarak antara setiap teks */
+    font-size: 20px;
+    color: #666;
 }
+
+.statistic-item i {
+    font-size: 48px;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.statistic-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2a2a2a;
+    padding: 50px 0;
+}
+
+.footer-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-nav h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #ff5300; /* Warna saat hover */
+}
+
 
 
 /* Adjust carousel height */
@@ -340,7 +443,7 @@ section {
         margin: 1.5rem;
         padding: 1.5rem;
         background: var(--abu);
-        border: 0.1rem solid #fff;
+        border: 0.1rem solid #fff;      
     }
 }
 
