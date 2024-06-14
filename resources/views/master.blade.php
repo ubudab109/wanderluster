@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
 
         <a class="navbar-brand kotak-logo">
             <img src="{{asset('assets/img/Logo Putih.svg')}}" class="white_logo">
@@ -37,12 +37,27 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="nav">
             <ul class="navbar-nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-light font-weight-bold px-3" href="#">Home</a>
+                <li class="nav-item {{Route::current()->getName() == 'home' ? 'active' : ''}}">
+                    <a class="nav-link text-light font-weight-bold px-3" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light font-weight-bold px-3" href="#">Our Services</a>
+                <li class="nav-item {{Route::current()->getName() == 'our-services' ? 'active' : ''}}">
+                    <a class="nav-link text-light font-weight-bold px-3" href="/our-services">Our Services</a>
                 </li>
+                {{-- <li class="nav-item dropdown active">
+                    <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="list-inline">
+                            <a class="dropdown-item" href="#">Transportation</a>
+                            <a class="dropdown-item" href="#">Group Tours</a>
+                            <a class="dropdown-item" href="#">Personalized Trips</a>
+                            <a class="dropdown-item" href="#">Event Trip</a>
+                        </ul>
+                        
+                    </div>
+                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link text-light font-weight-bold px-3" href="#">Destination</a>
                 </li>
@@ -60,11 +75,106 @@
 
     </nav>
     @yield('content')
+    {{-- <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+        <div class="col mb-3">
+            <a class="footer-brand kotak">
+                <img src="{{ asset('assets/img/Logo Only White.svg') }}" alt="">
+            </a>
+            <p class="text-muted">© 2022</p>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Our Services</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Transportation</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Group Tours</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Personalized Trip</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Event Trip</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Our Policies</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Payment & Cancellation</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Connect With Us</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">info@wanderluster.id</a></li>
+            </ul>
+        </div>
+    </footer> --}}
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const logo = document.querySelector('.kotak-logo');
+            const logoImg = document.querySelector('.white_logo');
+            
+            if (window.innerWidth >= 1299) {
+                if (window.scrollY > 50) {
+                    logo.style.height = 'fit-content';
+                    logoImg.style.marginTop = '0px';
+                } else {
+                    logo.style.height = '200px';
+                    logoImg.style.marginTop = '108px';
+                }
+            } else {
+                // Reset styles to original if width is less than 1300px and remove inline styles
+                logo.style.height = '';
+                logoImg.style.marginTop = '';
+            }
+        });
+    
+        // Ensure correct styles are applied on initial load based on scroll position and width
+        window.addEventListener('load', function() {
+            const logo = document.querySelector('.kotak-logo');
+            const logoImg = document.querySelector('.white_logo');
+    
+            if (window.innerWidth >= 1299) {
+                if (window.scrollY > 50) {
+                    logo.style.height = 'fit-content';
+                    logoImg.style.marginTop = '0px';
+                } else {
+                    logo.style.height = '200px';
+                    logoImg.style.marginTop = '108px';
+                }
+            } else {
+                // Ensure styles are reset when the page loads and width is less than 1300px
+                logo.style.height = '';
+                logoImg.style.marginTop = '';
+            }
+        });
+    
+        // Adjust styles if window is resized
+        window.addEventListener('resize', function() {
+            const logo = document.querySelector('.kotak-logo');
+            const logoImg = document.querySelector('.white_logo');
+    
+            if (window.innerWidth >= 1299) {
+                if (window.scrollY > 50) {
+                    logo.style.height = 'fit-content';
+                    logoImg.style.marginTop = '0px';
+                } else {
+                    logo.style.height = '200px';
+                    logoImg.style.marginTop = '108px';
+                }
+            } else {
+                // Ensure styles are reset when resized below 1300px
+                logo.style.height = '';
+                logoImg.style.marginTop = '';
+            }
+        });
     </script>
 </body>
 

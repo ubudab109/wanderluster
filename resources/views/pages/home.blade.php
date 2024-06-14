@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
-    <!-- Awal Header -->
-    {{-- <header>
+<!-- Awal Header -->
+{{-- <header>
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas-fa-bars"></label>
     <div class="kotak-logo">
@@ -17,159 +17,127 @@
     <div class="contact">
         <a href="#contact"> Contact Us</a>
     </div>
-    
+
 
     <!-- Akhir Header -->
 </header> --}}
 
-    <!--  Awal Home Section -->
-    <section class="home" id="#home">
-        <div class="content">
-            <h3>Bali-Lombok</h3>
-            <p>3 Days 2 Night</p>
-            <a href="#" class="btn"> Book Now</a>
-        </div>
-    </section>
-    <!-- Akhir Home Section -->
+<!--  Awal Home Section -->
+<section class="home" id="#home">
+    <div class="content">
+        <h3>Bali-Lombok</h3>
+        <p>3 Days 2 Night</p>
+        <a href="#" class="btn"> Book Now</a>
+    </div>
+</section>
+<!-- Akhir Home Section -->
 
 
-    <!-- About Section Start -->
-    <section>
-        <div class="row mt-3">
-            <div class="col-xl-6 col-lg-12">
-                <h1 class="heading">About Us</h1>
-                <h2 class="moto mb-3">We bring you the world</h2>
-                <p style="font-size: 18px;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error dicta nihil veritatis iusto,
-                    similique
-                    pariatur, sint fuga asperiores eaque blanditiis possimus culpa quis soluta? Beatae, saepe tempore
-                    voluptates
-                    labore ipsam molestias reiciendis adipisci quaerat perferendis, vero voluptatibus quo nesciunt corrupti
-                    obcaecati laboriosam ratione officia, quibusdam temporibus doloribus totam aperiam!
-                </p>
-            </div>
+<!-- About Section Start -->
+<section>
+    <div class="row mt-3">
+        <div class="col-xl-6 col-lg-12">
+            <h1 class="heading">About Us</h1>
+            <h2 class="moto mb-3">We bring you the world</h2>
+            <p style="font-size: 18px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error dicta nihil veritatis iusto,
+                similique
+                pariatur, sint fuga asperiores eaque blanditiis possimus culpa quis soluta? Beatae, saepe tempore
+                voluptates
+                labore ipsam molestias reiciendis adipisci quaerat perferendis, vero voluptatibus quo nesciunt corrupti
+                obcaecati laboriosam ratione officia, quibusdam temporibus doloribus totam aperiam!
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div class="titlepage">
-            <h2>Enjoy your trip</h2>
-            <p style="font-size: 18px">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters,</p>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <!--Bali Carousel-->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <!--First Slide: Bali-->
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('assets/img/bali.png') }}" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Travel to Bali</h5>
-                                <p>Explore With Us</p>
-                            </div>
-                        </div>
-                        <!--Second Slide: Lombok-->
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('assets/img/lombok.png') }}" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>The Best Tours Lombok</h5>
-                                <p>Explore With Us</p>
-                            </div>
-                        </div>
-                        <!--Third Slide: GWK-->
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('assets/img/gwk.png') }}" alt="Third slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>See a Beauty GWK</h5>
-                                <p>Explore With Us</p>
-                            </div>
+{{-- <section>
+    <div class="titlepage">
+        <h2>Enjoy your trip</h2>
+        <p style="font-size: 18px">It is a long established fact that a reader will be distracted by the readable
+            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters,</p>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!--Bali Carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--First Slide: Bali-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('assets/img/bali.png') }}" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Travel to Bali</h5>
+                            <p>Explore With Us</p>
                         </div>
                     </div>
-                    <!--Carousel Controls-->
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <!--Second Slide: Lombok-->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('assets/img/lombok.png') }}" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Best Tours Lombok</h5>
+                            <p>Explore With Us</p>
+                        </div>
+                    </div>
+                    <!--Third Slide: GWK-->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('assets/img/gwk.png') }}" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>See a Beauty GWK</h5>
+                            <p>Explore With Us</p>
+                        </div>
+                    </div>
                 </div>
+                <!--Carousel Controls-->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-    </section>
-    <!-- end Bali -->
+    </div>
+</section> --}}
+<!-- end Bali -->
 
-    <!-- Statistik Count -->
-    <section class="statistics">
-        <div class="titlepage-statistik">
-            <h2>Experts in travel services</h2>
-            <p style="font-size: 18px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium in suscipit eum minima dolore odio debitis, aliquid error perspiciatis repellat incidunt adipisci magni corporis quaerat et amet tempore facere consequatur!</p>
-        </div>
-        <div class="container-fluid">
-            <div class="statistic-banner">
-                <div class="statistic-item">
-                    <i class="fas fa-smile"></i>
-                    <h3>1000+</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="statistic-item">
-                    <i class="fas fa-globe"></i>
-                    <h3>500+</h3>
-                    <p>Destinations</p>
-                </div>
-                <div class="statistic-item">
-                    <i class="fas fa-route"></i>
-                    <h3>200+</h3>
-                    <p>Successful Tours</p>
-                </div>
+<!-- Statistik Count -->
+{{-- <section class="statistics">
+    <div class="titlepage-statistik">
+        <h2>Experts in travel services</h2>
+        <p style="font-size: 18px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium in suscipit eum
+            minima dolore odio debitis, aliquid error perspiciatis repellat incidunt adipisci magni corporis quaerat et
+            amet tempore facere consequatur!</p>
+    </div>
+    <div class="container-fluid">
+        <div class="statistic-banner">
+            <div class="statistic-item">
+                <i class="fas fa-smile"></i>
+                <h3>1000+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="statistic-item">
+                <i class="fas fa-globe"></i>
+                <h3>500+</h3>
+                <p>Destinations</p>
+            </div>
+            <div class="statistic-item">
+                <i class="fas fa-route"></i>
+                <h3>200+</h3>
+                <p>Successful Tours</p>
             </div>
         </div>
-    </section>
-
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 mb-5">
-    <div class="logo mb-3">
-        <a class="footer">
-            <img src="{{ asset('assets/img/Logo Only White.svg') }}" alt="">
-        </a>
-        <p class="text-muted">©2022</p>
     </div>
+</section> --}}
 
-    <div class="col mb-3">
-        <h5>Our Services</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Transportation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Group Tours</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Event Trip</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Personalized Trip</a></li>
-        </ul>
-    </div>
 
-    <div class="col mb-3">
-        <h5>Our Policies</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Terms & Conditions</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Payment & Cancellation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Contact Us</a></li>
-        </ul>
-    </div>
 
-    <div class="col mb-3">
-        <h5>Connect With Us</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">info@wanderluster.id</a></li>
-        </ul>
-    </div>
-</footer>
-
-    <!-- About Section End -->
+<!-- About Section End -->
 @endsection
