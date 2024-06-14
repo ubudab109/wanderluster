@@ -135,38 +135,38 @@
         </div>
     </section>
 
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
-    <div class="col mb-3">
-        <a class="footer-brand kotak">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 mb-5">
+    <div class="logo mb-3">
+        <a class="footer">
             <img src="{{ asset('assets/img/Logo Only White.svg') }}" alt="">
         </a>
-        <p class="text-muted">© 2022</p>
+        <p class="text-muted">©2022</p>
     </div>
 
     <div class="col mb-3">
         <h5>Our Services</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Transportation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Group Tours</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Personalized Trip</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Event Trip</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Transportation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Group Tours</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Event Trip</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Personalized Trip</a></li>
         </ul>
     </div>
 
     <div class="col mb-3">
         <h5>Our Policies</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Payment & Cancellation</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Terms & Conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Payment & Cancellation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">Contact Us</a></li>
         </ul>
     </div>
 
     <div class="col mb-3">
         <h5>Connect With Us</h5>
         <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">info@wanderluster.id</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link text-muted">info@wanderluster.id</a></li>
         </ul>
     </div>
 </footer>
