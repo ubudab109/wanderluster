@@ -20,6 +20,14 @@ html {
     overflow-x: hidden;
 }
 
+.for_dropdown {
+    width: 500px;
+    background-color: #ff5300;
+    height: 41px;
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+}
 
 nav {
     position: fixed;
