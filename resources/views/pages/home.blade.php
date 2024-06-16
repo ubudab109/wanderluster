@@ -35,7 +35,7 @@
 
 <!-- About Section Start -->
 <section>
-    <div class="row mt-3">
+    <div class="row mt-3 mb-5">
         <div class="col-xl-6 col-lg-12">
             <h1 class="heading">About Us</h1>
             <h2 class="moto mb-3">We bring you the world</h2>

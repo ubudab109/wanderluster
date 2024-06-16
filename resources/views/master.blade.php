@@ -43,16 +43,16 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="nav">
             <ul class="navbar-nav justify-content-center">
-                <li class="nav-item {{Route::current()->getName() == 'home' ? 'active' : ''}}">
-                    <a class="nav-link text-light font-weight-bold px-3" href="/">Home</a>
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold px-3" href="/">Home</a>
                 </li>
-                <li class="nav-item {{Route::current()->getName() == 'our-services' ? 'active' : ''}}">
-                    <a class="nav-link text-light font-weight-bold px-3" href="/our-services">Our Services</a>
-                </li>
-                {{-- <li class="nav-item dropdown active">
-                    <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
+                {{-- <li class="nav-item {{Route::current()->getName() == 'our-services' ? 'active' : ''}}">
+                    <a class="nav-link font-weight-bold px-3" href="/our-services">Our Services</a>
+                </li> --}}
+                <li class="nav-item dropdown" id="dropdown_services">
+                    <a class="nav-link font-weight-bold px-3 dropdown-toggle" href="#"
+                        id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <ul class="list-inline">
@@ -65,22 +65,72 @@
                     </div>
                 </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link text-light font-weight-bold px-3" href="#">Destination</a>
+                    <a class="nav-link font-weight-bold px-3" href="#">Destination</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light font-weight-bold px-3" href="#">Tour & Travel</a>
+                    <a class="nav-link font-weight-bold px-3" href="#">Tour & Travel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light font-weight-bold px-3 contact_nav" href="#">Contact Us</a>
+                    <a class="nav-link font-weight-bold px-3 contact_nav" href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
-        <span class="text-light font-weight-bold px-3 right-side-nav">
+        <span class="text-light font-weight-bold px-3 right-side-nav pt-4">
             Contact Us
         </span>
 
     </nav>
     @yield('content')
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Section: Links  -->
+        <div class="row footer-row">
+            <div class="col-xl-3 col-lg-12">
+                <div class="img-footer-group">
+                    <img src="{{asset('assets/img/Logo Only White.svg')}}" alt="logo">
+                    <div class="footer-group-title text-left px-5 mt-4">
+                        <h3 class="font-size-32 font-weight-500 text-light">We bring You</h3>
+                        <h2 class="font-size-32 font-weight-700 text-light">The World.</h2>
+                        <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-12 section-list-footer">
+                <h3 class="text-light font-size-32">Our Services</h3>
+                <ul>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Transportation</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Group Tours</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Personalized Trip</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Event Trip</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-12 section-list-footer">
+                <h3 class="text-light font-size-32">Our Policies</h3>
+                <ul>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms & Conditions</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms Payment & Cancellation</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">About Us</a></li>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-12 section-list-footer">
+                <h3 class="text-light font-size-32">Conect With Use</h3>
+                <ul>
+                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">info@wanderluster.id</a></li>
+                    <li>
+                        <div class="d-flex justify-content-center">
+                            <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
+                            <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
+                            <img class="mx-2" src="{{asset('assets/img/mail-svgrepo-com.svg')}}" width="25" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
     {{-- <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
         <div class="col mb-3">
             <a class="footer-brand kotak">
@@ -133,7 +183,7 @@
                     logoImg.style.marginTop = '0px';
                 } else {
                     logo.style.height = '200px';
-                    logoImg.style.marginTop = '108px';
+                    logoImg.style.marginTop = '119px';
                 }
             } else {
                 // Reset styles to original if width is less than 1300px and remove inline styles
@@ -153,7 +203,7 @@
                     logoImg.style.marginTop = '0px';
                 } else {
                     logo.style.height = '200px';
-                    logoImg.style.marginTop = '108px';
+                    logoImg.style.marginTop = '119px';
                 }
             } else {
                 // Ensure styles are reset when the page loads and width is less than 1300px
@@ -173,7 +223,7 @@
                     logoImg.style.marginTop = '0px';
                 } else {
                     logo.style.height = '200px';
-                    logoImg.style.marginTop = '108px';
+                    logoImg.style.marginTop = '119px';
                 }
             } else {
                 // Ensure styles are reset when resized below 1300px
