@@ -118,6 +118,36 @@ section {
     background-position: center;
 }
 
+.transport {
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    background-color: #fff;
+    background: url("/assets/img/frame 30.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+}
+
+.transport .content-transport h3 {
+    font-family: "Philosopher";
+    text-align: left;
+    font-size: 80px;
+    text-shadow: 2px 2px#2a2a2a;
+    font-weight: bolder;
+    color: #FF5300;
+    margin-top: 20px;
+}
+
+.transport .content-transport p{
+    font-family: "Philosopher";
+    font-size: 20px;
+    color: #2a2a2a;
+    line-height: 1;
+    text-wrap: wrap;
+    width: 500px;
+}
 .home content {
     max-width: 50rem;
 }
@@ -157,6 +187,33 @@ section {
     color: #fff;
     cursor: pointer;
     font-size: 1.7rem;
+}
+
+.transport a.btn-transport{
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-transport {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 9rem 3.5rem;
+    background: #ff5300;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 20px;
+}
+
+.transport a.btn-transport:hover{
+    background-color: #fff;
+    color: #ff5300;
 }
 
 .home a.btn:hover {
@@ -281,7 +338,7 @@ section {
      height: 5px;
      border-top: 5px solid #ff5300;
      top: 30px;
-     width: 550px;
+     width: 100px;
 }
 
 .titlepage h2::before{
@@ -417,6 +474,113 @@ footer {
     color: #ff5300; /* Warna saat hover */
 }
 
+
+.serve {
+    background-color: #fff;
+    margin-top: 90px;
+}
+
+.serve .container{
+    padding: 10px;
+}
+.serve .titlepage {
+    text-align: center;
+    padding-bottom: 54px;
+}
+.titlepage h2 {
+    padding: 0px 0px 20px 0px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #faba00;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+.titlepage span {
+    color: #141012;
+    font-size: 17px;
+    line-height: 32px;
+    display: block;
+}
+.titlepage h2::before {
+    right: 100%;
+    margin-right: 15px;
+}
+.titlepage h2::after {
+    left: 100%;
+    margin-left: 15px;
+}
+.titlepage h2::before,
+.titlepage h2::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 2px solid #ff5300;
+    top: 27px;
+    width: 149px;
+}
+.item h3 {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 10px 10px 10px 10px;
+    color: #282727;
+}
+.item p {
+    padding: 0px 10px 10px 10px;
+    color: #282727;
+}
+
+.card-transportation .card-body {
+    padding: 20px;
+}
+
+.card-transportation {
+    margin: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-transportation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 30px;
+    color: #ff5300;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #666;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
 
 /* Adjust carousel height */
