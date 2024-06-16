@@ -20,7 +20,6 @@ html {
     overflow-x: hidden;
 }
 
-
 nav {
     position: fixed;
     top: -1px;
@@ -37,8 +36,24 @@ nav {
     height: 93px;
 }
 
+nav .nav-item {
+    height: 91px;
+    padding-top: 34px;
+}
 nav .nav-item.active a.nav-link {
     color: #ff5300 !important;
+}
+
+nav .nav-item.dropdown.active.show {
+    background: #ff5300;
+}
+
+nav .nav-item.dropdown.active.show a {
+    color: white !important;
+}
+
+.dropdown-item {
+    color: white;
 }
 
 nav::after {
@@ -267,7 +282,6 @@ section {
     text-shadow: #2a2a2a;
 }
 
-
 .titlepage-statistik h2::after {
     left: 100%;
     margin-left: 15px;
@@ -279,15 +293,6 @@ section {
 }
 
 .titlepage-statistik h2::after {
-     content: "";
-     position: absolute;
-     height: 5px;
-     border-top: 5px solid #ff5300;
-     top: 30px;
-     width: 300px;
-}
-
-.titlepage-statistik h2::before{
     content: "";
     position: absolute;
     height: 5px;
@@ -296,14 +301,19 @@ section {
     width: 300px;
 }
 
-
+.titlepage-statistik h2::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 5px solid #ff5300;
+    top: 30px;
+    width: 300px;
+}
 
 .titlepage-statistik p {
     text-align: center;
     margin-top: 10px;
 }
-
-
 
 .carousel-item .titlepage {
     text-align: center;
@@ -341,7 +351,7 @@ section {
      width: 100px;
 }
 
-.titlepage h2::before{
+.titlepage h2::before {
     content: "";
     position: absolute;
     height: 5px;
@@ -359,16 +369,15 @@ section {
     border: 1px solid #ff5300; /* Border color */
 }
 
-.d-block{
+.d-block {
     border-radius: 5%;
-
 }
 .carousel-indicators .active {
-    background-color: #ff5300; 
+    background-color: #ff5300;
 }
-.carousel-caption h5{
-    color: #fff; 
-    padding: 20px; 
+.carousel-caption h5 {
+    color: #fff;
+    padding: 20px;
     font-size: 6rem;
     text-shadow: #2a2a2a;
     font-weight: bold;
@@ -381,7 +390,6 @@ section {
     text-shadow: #2a2a2a;
     font-weight: 25px;
 }
-
 
 .statistics {
     background: #fff;
@@ -438,7 +446,6 @@ footer {
 }
 
 .footer p {
-    
 }
 
 .footer-brand img {
@@ -585,7 +592,6 @@ footer {
 
 /* Adjust carousel height */
 
-
 /* Media Queries */
 
 @media (max-width: 991px) {
@@ -616,12 +622,22 @@ footer {
         margin: 1.5rem;
         padding: 1.5rem;
         background: var(--abu);
-        border: 0.1rem solid #fff;      
+        border: 0.1rem solid #fff;
     }
 }
 
+/* .dropdown-menu.show {
+    max-width: 902px;
+} */
 /* MOBILE - TABLET */
 @media (max-width: 768px) {
+    .dropdown-menu.show {
+        background: #ff5300 !important;
+        display: block;
+        border: none;
+        margin-top: -1px;
+    }
+
     .nav-item a {
         font-size: 15px;
     }
@@ -652,7 +668,26 @@ footer {
 }
 
 /* LAPTOP SMALL - 4010px */
+@media (min-width: 960px) {
+    .for_dropdown {
+        width: 556px;
+        background-color: #ff5300;
+        height: 42px;
+        position: absolute;
+        right: 0px;
+        bottom: -35px;
+        transition: height 0.3s, margin-top 0.3s;
+    }
+}
 @media (min-width: 769px) {
+    .dropdown-menu.show {
+        background: #ff5300 !important;
+        display: flex;
+        border: none;
+        margin-top: -6px;
+        transition: height 0.3s, margin-top 0.3s;
+    }
+
     .nav-item a {
         font-size: 18px;
     }
@@ -667,6 +702,10 @@ footer {
 }
 
 @media (min-width: 1300px) {
+    .navbar-nav {
+        margin-left: 160px;
+    }
+
     .kotak-logo {
         width: 297px;
         position: absolute;
@@ -739,4 +778,3 @@ footer {
         height: 200px;
     } */
 }
-
