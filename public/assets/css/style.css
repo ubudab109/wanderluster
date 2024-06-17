@@ -542,7 +542,7 @@ footer {
 /* LAPTOP SMALL - 4010px */
 @media (min-width: 821px) {
     .for_dropdown {
-        width: 556px;
+        width: 40%;
         background-color: #ff5300;
         height: 42px;
         position: absolute;
