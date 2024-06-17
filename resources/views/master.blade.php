@@ -71,56 +71,59 @@
         </span>
         <div class="for_dropdown" style="display: none;"></div>
     </nav>
-    @yield('content')
+    <div class="wrapper">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- Section: Links  -->
-        <div class="row footer-row">
-            <div class="col-xl-3 col-lg-12">
-                <div class="img-footer-group">
-                    <img src="{{asset('assets/img/Logo Only White.svg')}}" alt="logo">
-                    <div class="footer-group-title text-left px-5 mt-4">
-                        <h3 class="font-size-32 font-weight-500 text-light">We bring You</h3>
-                        <h2 class="font-size-32 font-weight-700 text-light">The World.</h2>
-                        <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
+        @yield('content')
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Section: Links  -->
+            <div class="row footer-row">
+                <div class="col-xl-3 col-lg-12 mb-3">
+                    <div class="img-footer-group">
+                        <img src="{{asset('assets/img/Logo Only White.svg')}}" alt="logo">
+                        <div class="footer-group-title text-left px-5 mt-4">
+                            <h3 class="font-size-32 font-weight-500 text-light">We bring You</h3>
+                            <h2 class="font-size-32 font-weight-700 text-light">The World.</h2>
+                            <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
+                        </div>
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
+                    <h3 class="text-light font-size-32">Our Services</h3>
+                    <ul>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Transportation</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Group Tours</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Personalized Trip</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Event Trip</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
+                    <h3 class="text-light font-size-32">Our Policies</h3>
+                    <ul>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms & Conditions</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms Payment & Cancellation</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">About Us</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
+                    <h3 class="text-light font-size-32">Conect With Us</h3>
+                    <ul>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">info@wanderluster.id</a></li>
+                        <li>
+                            <div class="d-flex justify-content-left icon_footer">
+                                <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
+                                <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
+                                <img class="mx-2" src="{{asset('assets/img/mail-svgrepo-com.svg')}}" width="25" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xl-3 col-lg-12 section-list-footer">
-                <h3 class="text-light font-size-32">Our Services</h3>
-                <ul>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Transportation</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Group Tours</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Personalized Trip</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Event Trip</a></li>
-                </ul>
-            </div>
-            <div class="col-xl-3 col-lg-12 section-list-footer">
-                <h3 class="text-light font-size-32">Our Policies</h3>
-                <ul>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms & Conditions</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms Payment & Cancellation</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">About Us</a></li>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-xl-3 col-lg-12 section-list-footer">
-                <h3 class="text-light font-size-32">Conect With Use</h3>
-                <ul>
-                    <li><a class="font-gray font-size-18 footer-list-anchor" href="">info@wanderluster.id</a></li>
-                    <li>
-                        <div class="d-flex justify-content-center">
-                            <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
-                            <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
-                            <img class="mx-2" src="{{asset('assets/img/mail-svgrepo-com.svg')}}" width="25" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- Section: Links  -->
-    </footer>
+            <!-- Section: Links  -->
+        </footer>
+    </div>
     <!-- Footer -->
     {{-- <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
         <div class="col mb-3">

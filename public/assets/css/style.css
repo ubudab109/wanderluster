@@ -619,15 +619,27 @@ footer {
 }
 
 @media(max-width: 1024px) {
+    
+}
+
+@media (max-width: 1199px) {
+    .footer-row {
+        justify-content: center !important;
+    }
     .section-list-footer {
         text-align: center;
+    }
+    .icon_footer {
+        justify-content: center !important;
+    }
+
+    .img-footer-group img {
+        width: 77px;
+        margin-left: 0px;
     }
 }
 
 @media (max-width: 1299px) {
-    .footer-row {
-        justify-content: center !important;
-    }
     
     .kotak-logo {
         height: 100px;
