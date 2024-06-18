@@ -21,7 +21,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    
+    <link rel="stylesheet" href="{{asset('assets/css/style2.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
@@ -55,20 +55,17 @@
                         Our Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <ul class="list-inline">
-                            <a class="dropdown-item" href="#">Transportation</a>
-                            <a class="dropdown-item" href="#">Group Tours</a>
-                            <a class="dropdown-item" href="#">Personalized Trips</a>
-                            <a class="dropdown-item" href="#">Event Trip</a>
-                        </ul>
-                        
+                        <a class="dropdown-item" href="{{route('transportation')}}">Transportation</a>
+                        <a class="dropdown-item" href="{{route('grouptour')}}">Group Tours</a>
+                        <a class="dropdown-item" href="{{route('personalizetrip')}}">Personalized Trips</a>
+                        <a class="dropdown-item" href="{{route('eventtrip')}}">Event Trip</a>
                     </div>
-                </li> --}}
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold px-3" href="#">Destination</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold px-3" href="#">Tour & Travel</a>
+                    <a class="nav-link font-weight-bold px-3" href="{{route('destination')}}">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold px-3" href="{{route('tourtravel')}}">Tour & Travel</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold px-3 contact_nav" href="#">Contact Us</a>
@@ -78,7 +75,7 @@
         <span class="text-light font-weight-bold px-3 right-side-nav pt-4">
             Contact Us
         </span>
-
+        <div class="for_dropdown" style="display: none;"></div>
     </nav>
     @yield('content')
 
@@ -173,6 +170,16 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
     <script>
+        $('#dropdown_services').on('shown.bs.dropdown', function () {
+            $(this).addClass('active');
+            $(".for_dropdown").css('display', 'block');
+        });
+
+        $('#dropdown_services').on('hidden.bs.dropdown', function () {
+            $(this).removeClass('active');
+            $(".for_dropdown").css('display', 'none');
+        });
+
         window.addEventListener('scroll', function() {
             const logo = document.querySelector('.kotak-logo');
             const logoImg = document.querySelector('.white_logo');

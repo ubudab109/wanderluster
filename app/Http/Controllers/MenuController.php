@@ -6,10 +6,37 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function ourServices()
+    public function transportation()
     {
-        return view('pages.services');
+        return view('pages.transportation');
     }
+
+    public function  grouptour()
+    {
+        return view('pages.grouptour');
+    }
+
+    public function personalizetrip()
+    {
+        return view('pages.personalizetrip');
+    }
+
+    public function eventtrip()
+    {
+        return view('pages.eventtrip');
+    }
+
+    public function destination()
+    {
+        return view('pages.destination');
+    }
+
+    public function tourtravel()
+    {
+        return view('pages.tourtravel');
+    }
+
+
 
     /**
      * public function blabla() 

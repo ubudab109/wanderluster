@@ -1,0 +1,587 @@
+/* Specific Styles for Tour Travel Page */
+.tour-travel-container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.tour-travel-container .slide {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.tour-travel-container .slide .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.tour-travel-container .slide .item:nth-child(1),
+.tour-travel-container .slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tour-travel-container .slide .item:nth-child(3) {
+    left: 50%;
+}
+
+.tour-travel-container .slide .item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.tour-travel-container .slide .item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.tour-travel-container .slide .item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.tour-travel-container .item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+.tour-travel-container .slide .item:nth-child(2) .content {
+    display: block;
+}
+
+.tour-travel-container .content .name {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    text-shadow: #666;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.tour-travel-container .content .des {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-shadow: #666;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.tour-travel-container .content button {
+    padding: 10px 20px;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #ff5300;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.tour-travel-container .button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.tour-travel-container .button button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 7px 10px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.tour-travel-container .button button:hover {
+    background: #ff5300;
+    color: #fff;
+}
+
+.additional-content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 7px solid #ff5300;
+    margin-top: 31px;
+}
+
+.additional-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.additional-content p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.additional-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-content ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.additional-content ul li a {
+    font-size: 16px;
+    color: #ff5300;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.additional-content ul li a:hover {
+    color: #ff784e;
+}
+
+
+
+.group-tours {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.group-tours .titlepage {
+    text-align: center;
+
+}
+
+.group-tours .titlepage h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.group-tours .titlepage p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.card-tour {
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.card-tour:hover {
+    transform: translateY(-10px);
+}
+
+.card-tour img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.card-tour .card-body {
+    padding: 20px;
+}
+
+.card-tour .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-tour .card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.card-tour .btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #ff5300;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-tour .btn-primary:hover {
+    background-color: #ff8a80;
+    border-color: #ff8a80;
+}
+
+.personalized-trips {
+    margin-top: 100px; 
+    padding-top: 50px; 
+}
+
+.personalized-trips .titlepage {
+    text-align: center;
+}
+
+.personalized-trips .titlepage h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.personalized-trips .titlepage p{
+    font-size: 20px;
+    
+}
+
+
+/* Optional: Adjust card spacing */
+.card-trip {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-trip .card-body {
+    padding: 20px;
+}
+
+.personalized-trips {
+    margin-top: 100px; 
+    padding-top: 50px; 
+}
+
+.card-trip img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-trip:hover {
+    transform: translateY(-5px); 
+}
+
+.card-trip .card-img-top {
+    height: 200px; 
+    object-fit: cover;
+}
+
+.card-trip .card-title {
+    font-size: 24px;
+    font-weight: bold; 
+    margin-top: 1rem;
+    margin-bottom: 10px; 
+}
+
+.card-trip .card-text {
+    font-size: 16px; 
+    margin-bottom: 1rem; 
+}
+
+.card-trip .btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    padding: 10px 20px;
+    background: #ff5300;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-trip .btn-primary:hover {
+    background-color: #ff8a80;
+    border-color: #ff8a80;
+}
+
+/* CSS Event Trip */
+.event-trip {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-trip .card-body {
+    padding: 20px;
+}
+
+.event-trip img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.event-trip:hover {
+    transform: translateY(-5px); 
+}
+
+.event-trip .card-img-top {
+    height: 200px; 
+    object-fit: cover;
+}
+
+.event-trip .card-title {
+    font-size: 24px;
+    font-weight: bold; 
+    margin-top: 1rem;
+    margin-bottom: 10px; 
+}
+
+.event-trip .card-text {
+    font-size: 16px; 
+    margin-bottom: 1rem; 
+}
+
+.event-trip .btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    padding: 10px 20px;
+    background: #ff5300;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.event-trip .btn-primary:hover {
+    background-color: #ff8a80;
+    border-color: #ff8a80;
+}
+
+.event-trip-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.content-event-trip {
+    text-align: center;
+}
+
+.content-event-trip h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-event-trip p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-event-trip {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-event-trip:hover {
+    background-color: #23527c;
+}
+
+.event-trip-detail {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titlepage {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titlepage h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.titlepage span {
+    font-size: 18px;
+    color: #666;
+}
+
+.card-event-trip {
+    margin-bottom: 20px;
+}
+
+.card-event-trip img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-event-trip .card-body {
+    padding: 20px;
+}
+
+.card-event-trip .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-event-trip .card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* CSS Destination */
+/* Header Destination */
+.header-destination {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/destination.jpg") no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54vh;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.header-destination h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-destination p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Destination Section */
+.destination-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Destination Item */
+.destination-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+}
+
+.destination-item .destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.destination-item .destination-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.destination-item .destination-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.destination-item .destination-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.destination-item .btn-primary {
+    background-color: #ff5300;
+    border-color: #ff5300;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.destination-item .btn-primary:hover {
+    background-color: #ff8a80;
+    border-color: #ff8a80;
+}

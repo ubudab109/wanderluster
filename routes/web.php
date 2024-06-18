@@ -7,4 +7,9 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/our-services', [MenuController::class, 'ourServices'])->name('our-services');
+Route::get('/transportation', [MenuController::class, 'transportation'])->name('transportation');
+Route::get('/grouptour', [MenuController::class, 'groupTour'])->name('grouptour');
+Route::get('/personalizetrip', [MenuController::class, 'personalizetrip'])->name('personalizetrip');
+Route::get('/eventtrip', [MenuController::class, 'eventtrip'])->name('eventtrip');
+Route::get('/destination', [MenuController::class, 'destination'])->name('destination');
+Route::get('/tourtravel', [MenuController::class, 'tourtravel'])->name('tourtravel');
