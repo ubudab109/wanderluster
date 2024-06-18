@@ -36,6 +36,11 @@ class MenuController extends Controller
         return view('pages.tourtravel');
     }
 
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+
 
 
     /**

@@ -68,13 +68,13 @@
                     <a class="nav-link font-weight-bold px-3" href="{{route('tourtravel')}}">Tour & Travel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold px-3 contact_nav" href="#">Contact Us</a>
+                    <a class="nav-link font-weight-bold px-3 contact_nav" href="{{route('contact')}}">Contact Us</a>
                 </li>
             </ul>
         </div>
-        <span class="text-light font-weight-bold px-3 right-side-nav pt-4">
+        <a href="{{route('contact')}}" class="text-light font-weight-bold px-3 right-side-nav pt-4">
             Contact Us
-        </span>
+        </a>
         <div class="for_dropdown" style="display: none;"></div>
     </nav>
     <div class="wrapper">
