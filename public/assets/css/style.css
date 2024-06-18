@@ -708,7 +708,7 @@ footer {
 /* LAPTOP SMALL - 4010px */
 @media (min-width: 821px) {
     .for_dropdown {
-        width: 556px;
+        width: 40%;
         background-color: #ff5300;
         height: 42px;
         position: absolute;
@@ -785,15 +785,27 @@ footer {
 }
 
 @media(max-width: 1024px) {
+    
+}
+
+@media (max-width: 1199px) {
+    .footer-row {
+        justify-content: center !important;
+    }
     .section-list-footer {
         text-align: center;
+    }
+    .icon_footer {
+        justify-content: center !important;
+    }
+
+    .img-footer-group img {
+        width: 77px;
+        margin-left: 0px;
     }
 }
 
 @media (max-width: 1299px) {
-    .footer-row {
-        justify-content: center !important;
-    }
     
     .kotak-logo {
         height: 100px;
