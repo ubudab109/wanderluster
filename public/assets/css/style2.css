@@ -43,7 +43,7 @@
 }
 
 .tour-travel-container .slide .item:nth-child(3) {
-    left: 50%;
+    left: 56%;
 }
 
 .tour-travel-container .slide .item:nth-child(4) {
@@ -54,7 +54,7 @@
     left: calc(50% + 440px);
 }
 
-/* here n = 0, 1, 2, 3,... */
+/* foto slide n = 0, 1, 2, 3,... */
 .tour-travel-container .slide .item:nth-child(n + 6) {
     left: calc(50% + 660px);
     opacity: 0;
@@ -774,4 +774,147 @@
 }
 .sec-title.light h2 {
     color: #fff;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .destination-item {
+        width: 100%;
+        position: relative;
+    }
+
+    .destination-item .destination-title {
+        font-size: 22px;
+    }
+
+    .destination-item .destination-description {
+        font-size: 15px;
+    }
+
+    .header-destination h1 {
+        font-size: 32px;
+    }
+
+    .header-destination p {
+        font-size: 16px;
+    }
+
+    .tour-travel-container .slide {
+        height: 500px;
+    }
+
+    .tour-travel-container .slide .item {
+        width: 150px;
+        height: 250px;
+    }
+
+    .tour-travel-container .content .name {
+        font-size: 42px;
+    }
+
+    .tour-travel-container .content .des {
+        font-size: 11px;
+    }
+
+    .tour-travel-container .content button {
+        width: 80px;
+        height: 32px;
+    }
+
+    .additional-content h2 {
+        font-size: 24px;
+    }
+
+    .additional-content p {
+        font-size: 14px;
+    }
+
+    .additional-content ul li a {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Small devices (phones, 767px and down) */
+@media (max-width: 767px) {
+    .destination-item {
+        width: 100%;
+    }
+
+    .destination-item .destination-info {
+        padding: 15px;
+    }
+
+    .destination-item .destination-title {
+        font-size: 20px;
+    }
+
+    .destination-item .destination-description {
+        font-size: 14px;
+    }
+
+    .destination-item .btn-primary {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .header-destination h1 {
+        font-size: 28px;
+    }
+
+    .header-destination p {
+        font-size: 14px;
+    }
+
+    .tour-travel-container {
+        padding: 10px;
+    }
+
+    .tour-travel-container .slide {
+        height: 400px;
+        flex-direction: column;
+    }
+
+
+    .tour-travel-container .content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transform: none;
+    }
+
+    .tour-travel-container .content .name {
+        font-size: 40px;
+    }
+
+    .tour-travel-container .content .des {
+        font-size: 12px;
+    }
+
+    .tour-travel-container .content button {
+        width: 70px;
+        height: 30px;
+    }
+
+    .tour-travel-container .button {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .additional-content h2 {
+        font-size: 20px;
+    }
+
+    .additional-content p {
+        font-size: 12px;
+    }
+
+    .additional-content ul li a {
+        font-size: 12px;
+    }
 }

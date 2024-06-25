@@ -15,10 +15,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="titlepage">
+                    <div class="titlepage-transportation">
                         <h2>Our serve Transportation</h2>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a dolorum error sunt
-                            tempora doloribus similique, architecto possimus voluptate perferendis.</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a dolorum error sunt
+                            tempora doloribus similique, architecto possimus voluptate perferendis.</p>
                     </div>
                 </div>
             </div>

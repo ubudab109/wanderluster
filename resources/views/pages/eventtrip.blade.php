@@ -3,7 +3,7 @@
 
 <div class="personalized-trips" style="padding-top: 100px;">
     <div class="container">
-        <div class="titlepage">
+        <div class="titlepage-event">
             <h2>Event Trip</h2>
             <p style="text-align: center">Tailor your travel experience to your preferences and enjoy a unique journey crafted just for you.</p>
         </div>

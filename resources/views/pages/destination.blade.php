@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <!-- Destination 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="destination-item">
                     <div class="destination-image">
                         <img src="{{ asset('assets/img/bali.png') }}" alt="Destination Image 1">
@@ -26,7 +26,7 @@
             </div>
 
             <!-- Destination 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="destination-item">
                     <div class="destination-image">
                         <img src="{{ asset('assets/img/bali.png') }}" alt="Destination Image 2">
@@ -40,7 +40,7 @@
             </div>
 
             <!-- Destination 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="destination-item">
                     <div class="destination-image">
                         <img src="{{ asset('assets/img/bali.png') }}" alt="Destination Image 3">

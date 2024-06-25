@@ -3,7 +3,7 @@
 
 <section class="group-tours" id="group-tours" style="padding-top: 100px;">
     <div class="container">
-        <div class="titlepage">
+        <div class="titlepage-group">
             <h2>Group Tours</h2>
             <p style="text-align: center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo fugit saepe voluptates laudantium enim, perspiciatis ullam sint possimus dolorum a itaque. Vero delectus laboriosam omnis doloremque officia voluptate dignissimos esse ex voluptatem eaque! Fugiat perspiciatis temporibus harum doloremque libero, illo suscipit maxime assumenda amet vero quis possimus ratione repellat..</p>
         </div>
