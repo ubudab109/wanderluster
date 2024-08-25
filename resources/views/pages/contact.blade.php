@@ -46,15 +46,14 @@
                     <div class="inner-column">
                         <h2>Contact Info</h2>
                         <ul class="list-info">
-                            <li><i class="fas fa-globe"></i>123 lorem ipsum Abc, Ampera Raya, Bunker.</li>
-                            <li><i class="far fa-envelope"></i>example@test</li>
-                            <li><i class="fas fa-phone"></i>1-234-567-890 <br> 1-234-567-890</li>
+                            <li><i class="far fa-envelope"></i>info@wanderluster.id</li>
+                            <li><i class="fas fa-phone"></i>+62 811-9938-389
                         </ul>
                         <ul class="social-icon-four">
                             <li class="follow">Follow on: </li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="https://www.instagram.com/wanderluster.id?igsh=c28yYnZkcmNzMmJi"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://wa.link/g0uvk0"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                 </div>

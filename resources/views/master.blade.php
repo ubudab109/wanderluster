@@ -91,7 +91,6 @@
                         <div class="footer-group-title text-left px-5 mt-4">
                             <h3 class="font-size-32 font-weight-500 text-light">We bring You</h3>
                             <h2 class="font-size-32 font-weight-700 text-light">The World.</h2>
-                            <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
                         </div>
                     </div>
                 </div>
@@ -103,6 +102,7 @@
                         <li><a class="font-gray font-size-18 footer-list-anchor" href="">Personalized Trip</a></li>
                         <li><a class="font-gray font-size-18 footer-list-anchor" href="">Event Trip</a></li>
                     </ul>
+                    <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
                     <h3 class="text-light font-size-32">Our Policies</h3>
@@ -119,8 +119,12 @@
                         <li><a class="font-gray font-size-18 footer-list-anchor" href="">info@wanderluster.id</a></li>
                         <li>
                             <div class="d-flex justify-content-left icon_footer">
-                                <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
-                                <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
+                                <a href="https://www.instagram.com/wanderluster.id?igsh=c28yYnZkcmNzMmJi" target="_blank">
+                                    <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
+                                </a>                               
+                                 <a href="" target="_blank" >
+                                    <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
+                                </a>
                                 <img class="mx-2" src="{{asset('assets/img/mail-svgrepo-com.svg')}}" width="25" alt="">
                             </div>
                         </li>

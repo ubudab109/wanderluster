@@ -1,86 +1,155 @@
 @extends('master')
 
 @section('content')
-
-<div class="tour-travel-container" style="padding-top: 100px;">
-    <div class="slide">
-        <div class="item" style="background-image: url(/assets/img/pura.jpg);">
+<div class="slider">
+    <div class="list">
+        <div class="item active">
+            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-                <div class="name">Switzerland</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+               <p style="color: white">Kuala Lumpur</p>
+               <h2>Petronas Tower</h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
-        <div class="item" style="background-image: url(/assets/img/pura.jpg);">
+        <div class="item">
+            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-                <div class="name">Indonesia</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+               <p style="color: white">Kuala Lumpur</p>
+               <h2>Petronas Tower</h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
-        <div class="item" style="background-image: url(/assets/img/pura.jpg);">
+        <div class="item">
+            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-                <div class="name">Iceland</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+               <p style="color: white">Kuala Lumpur</p>
+               <h2>Petronas Tower</h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
-        <div class="item" style="background-image:url(/assets/img/pura.jpg);">
+        <div class="item">
+            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-                <div class="name">Australia</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+               <p style="color: white">Kuala Lumpur</p>
+               <h2>Petronas Tower</h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
-        <div class="item" style="background-image: url(/assets/img/pura.jpg);">
+        <div class="item">
+            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-                <div class="name">Netherlands</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+               <p style="color: white">Kuala Lumpur</p>
+               <h2>Petronas Tower</h2> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
-        <div class="item" style="background-image: url(/assets/img/pura.jpg);"> <div class="content">
-                <div class="name">Ireland</div>
-                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="button">
-        <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #fff"></i></button>
-        <button class="next"><i class="fa-solid fa-arrow-right" style="color: #fff"></i></button>
     </div>
 </div>
 
+<!-- button arrows -->
+<div class="arrows">
+    <button id="prev"><</button>
+    <button id="next">></button>
+</div>
 
-<div class="additional-content">
-    <h2>Travel & Tours</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <ul>
-        <li><a href="#">Destination 1</a></li>
-        <li><a href="#">Destination 2</a></li>
-        <li><a href="#">Destination 3</a></li>
-        <li><a href="#">Destination 4</a></li>
-        <li><a href="#">Destination 5</a></li>
-    </ul>
+<!-- thumbnail -->
+<div class="thumbnail">
+    <div class="item active">
+        <img src="{{ asset('assets/img/bali.png') }}">
+        <div class="content">Name Slider</div>
+    </div>
+    <div class="item">
+        <img src="{{ asset('assets/img/bali.png') }}">
+        <div class="content">Name Slider</div>
+    </div>
+    <div class="item">
+        <img src="{{ asset('assets/img/bali.png') }}">
+        <div class="content">Name Slider</div>
+    </div>
+    <div class="item">
+        <img src="{{ asset('assets/img/bali.png') }}">
+        <div class="content">Name Slider</div>
+    </div>
+    <div class="item">
+        <img src="{{ asset('assets/img/bali.png') }}">
+        <div class="content">Name Slider</div>
+    </div>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let next = document.querySelector('.next');
-        let prev = document.querySelector('.prev');
-    
-        next.addEventListener('click', function() {
-            let items = document.querySelectorAll('.item');
-            document.querySelector('.slide').appendChild(items[0]);
-        });
-    
-        prev.addEventListener('click', function() {
-            let items = document.querySelectorAll('.item');
-            document.querySelector('.slide').prepend(items[items.length - 1]);
-        });
-    });
-    </script>
+  let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let thumbnails = document.querySelectorAll('.thumbnail .item');
 
+// config param
+let countItem = items.length;
+let itemActive = 0;
+// event next click
+next.onclick = function(){
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
+    }
+    showSlider();
+}
+//event prev click
+prev.onclick = function(){
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+// auto run slider
+let refreshInterval = setInterval(() => {
+    next.click();
+}, 5000)
+function showSlider(){
+    // remove item active old
+    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+    itemActiveOld.classList.remove('active');
+    thumbnailActiveOld.classList.remove('active');
+
+    // active new item
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
+
+    // clear auto time run slider
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(() => {
+        next.click();
+    }, 5000)
+}
+
+// click thumbnail
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
+    })
+})
+</script>
+
+
+<!-- Paket Wisata Unggulan Section -->
+<section id="featured-packages" class="py-5">
+    <div class="container">
+        <h2 class="text-center font-weight-bold">Paket Wisata Unggulan</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{{ asset('assets/img/package1.jpg') }}" class="card-img-top" alt="Package 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket Wisata 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other packages here -->
+        </div>
+    </div>
+</section>
 @endsection

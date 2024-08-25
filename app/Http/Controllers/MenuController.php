@@ -13,7 +13,16 @@ class MenuController extends Controller
 
     public function  grouptour()
     {
-        return view('pages.grouptour');
+        $cards = [
+            ['title' => 'Petronas Tower', 'copy' => 'Experience the breathtaking view from the iconic Petronas Towers in Kuala Lumpur.', 'button' => 'Learn More', 'image' => 'assets/img/malaysiagrup1.jpg'],
+            ['title' => 'Batu Caves', 'copy' => 'Explore the magnificent Batu Caves, a limestone hill with a series of caves and cave temples.', 'button' => 'Learn More', 'image' => 'assets/img/malaysiagrup2.jpg'],
+            ['title' => 'Genting Skyworld', 'copy' => 'Enjoy the thrilling rides and attractions at Genting Skyworld, a popular theme park in Malaysia.', 'button' => 'Learn More', 'image' => 'assets/img/malaysiagrup3.png'],
+
+        ];
+
+        return view('pages.grouptour', ['cards' => $cards]);
+        
+     
     }
 
     public function personalizetrip()
