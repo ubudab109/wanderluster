@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Wanderluster.id</title>
 
     <!-- font awesome cdn -->
@@ -97,10 +98,10 @@
                 <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
                     <h3 class="text-light font-size-32">Our Services</h3>
                     <ul>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Transportation</a></li>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Group Tours</a></li>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Personalized Trip</a></li>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Event Trip</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="{{route('transportation')}}">Transportation</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="{{route('grouptour')}}">Group Tours</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="{{route('personalizetrip')}}">Personalized Trip</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="{{route('eventtrip')}}">Event Trip</a></li>
                     </ul>
                     <span class="text-light font-weight-300 text-shadow-small">© 2024 - Wanderluster Indonesia</span>
                 </div>
@@ -109,8 +110,8 @@
                     <ul>
                         <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms & Conditions</a></li>
                         <li><a class="font-gray font-size-18 footer-list-anchor" href="">Terms Payment & Cancellation</a></li>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">About Us</a></li>
-                        <li><a class="font-gray font-size-18 footer-list-anchor" href="">Contact Us</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="/">About Us</a></li>
+                        <li><a class="font-gray font-size-18 footer-list-anchor" href="{{route('contact')}}">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-12 section-list-footer">
@@ -122,8 +123,8 @@
                                 <a href="https://www.instagram.com/wanderluster.id?igsh=c28yYnZkcmNzMmJi" target="_blank">
                                     <img class="mr-2" src="{{asset('assets/img/instagram-svgrepo-com.svg')}}" width="25" alt="">
                                 </a>                               
-                                 <a href="" target="_blank" >
-                                    <img class="mx-2" src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
+                                 <a href="https://wa.link/g0uvk0" target="_blank" >
+                                    <img class="mx-2"  src="{{asset('assets/img/whatsapp-svgrepo-com.svg')}}" width="25" alt="">
                                 </a>
                                 <img class="mx-2" src="{{asset('assets/img/mail-svgrepo-com.svg')}}" width="25" alt="">
                             </div>

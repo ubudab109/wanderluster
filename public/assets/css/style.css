@@ -1171,7 +1171,7 @@ footer {
     }
 
     .img-footer-group {
-        position: initial !important;
+        position: initial;
         width: 100%;
         text-align: center;
         justify-content: center;

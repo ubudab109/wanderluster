@@ -6,41 +6,29 @@
         <div class="item active">
             <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
             <div class="content">
-               <p style="color: white">Kuala Lumpur</p>
+               <p style="color: white">Malaysia</p>
                <h2>Petronas Tower</h2> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
             </div>
         </div>
         <div class="item">
-            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/marinabay.jpg') }}" alt="">
             <div class="content">
-               <p style="color: white">Kuala Lumpur</p>
-               <h2>Petronas Tower</h2> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
+               <p style="color: white">Singapore</p>
+               <h2>Marina Bay Sands</h2> 
             </div>
         </div>
         <div class="item">
-            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/batucave.jpg') }}" alt="">
             <div class="content">
-               <p style="color: white">Kuala Lumpur</p>
-               <h2>Petronas Tower</h2> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
+               <p style="color: white">Malaysia</p>
+               <h2>Batu Cave</h2> 
             </div>
         </div>
         <div class="item">
-            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/patungsinga.jpg') }}" alt="">
             <div class="content">
-               <p style="color: white">Kuala Lumpur</p>
-               <h2>Petronas Tower</h2> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="{{ asset('assets/img/petronas.jpg') }}" alt="">
-            <div class="content">
-               <p style="color: white">Kuala Lumpur</p>
-               <h2>Petronas Tower</h2> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique.</p>
+               <p style="color: white">Singapore</p>
+               <h2>Merlion Parks</h2> 
             </div>
         </div>
     </div>
@@ -55,24 +43,20 @@
 <!-- thumbnail -->
 <div class="thumbnail">
     <div class="item active">
-        <img src="{{ asset('assets/img/bali.png') }}">
-        <div class="content">Name Slider</div>
+        <img src="{{ asset('assets/img/petronas.jpg') }}">
+        <div class="content">Petronas Tower</div>
     </div>
     <div class="item">
-        <img src="{{ asset('assets/img/bali.png') }}">
-        <div class="content">Name Slider</div>
+        <img src="{{ asset('assets/img/marinabay.jpg') }}">
+        <div class="content">Marina Bay</div>
     </div>
     <div class="item">
-        <img src="{{ asset('assets/img/bali.png') }}">
-        <div class="content">Name Slider</div>
+        <img src="{{ asset('assets/img/batucave.jpg') }}">
+        <div class="content">Batu Cave</div>
     </div>
     <div class="item">
-        <img src="{{ asset('assets/img/bali.png') }}">
-        <div class="content">Name Slider</div>
-    </div>
-    <div class="item">
-        <img src="{{ asset('assets/img/bali.png') }}">
-        <div class="content">Name Slider</div>
+        <img src="{{ asset('assets/img/patungsinga.jpg') }}">
+        <div class="content">Merlion Parks</div>
     </div>
 </div>
 
@@ -132,24 +116,16 @@ thumbnails.forEach((thumbnail, index) => {
 })
 </script>
 
+<div class="titlepage-event">
+    <h2>Our Gallery</h2>
+</div>
 
 <!-- Paket Wisata Unggulan Section -->
-<section id="featured-packages" class="py-5">
-    <div class="container">
-        <h2 class="text-center font-weight-bold">Paket Wisata Unggulan</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ asset('assets/img/package1.jpg') }}" class="card-img-top" alt="Package 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Paket Wisata 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Lihat Detail</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Add other packages here -->
-        </div>
-    </div>
-</section>
+<div class="paket-wisata">
+    <img src="{{ asset('assets/img/wander.jpeg') }}" alt="">
+    <img src="{{ asset('assets/img/wander2.jpeg') }}" alt="">
+    <img src="{{ asset('assets/img/wander3.jpeg') }}" alt="">
+    <img src="{{ asset('assets/img/wander4.jpeg') }}" alt="">
+</div>
+
 @endsection

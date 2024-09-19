@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="contact-page-section" style="padding-top: 100px">
+<section class="contact-page-section" style="padding-top: 150px">
     <div class="container">
         <div class="sec-title">
             <div class="title">Contact Us</div>
