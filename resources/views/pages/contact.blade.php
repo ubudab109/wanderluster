@@ -8,7 +8,7 @@
             <div class="title">Contact Us</div>
             <h2>Let's Get in Touch.</h2>
         </div>
-        <div class="inner-container">
+        <div class="inner-containner">
             <div class="row clearfix">
                 <!--Form Column-->
                 <div class="form-column col-md-8 col-sm-12 col-xs-12">

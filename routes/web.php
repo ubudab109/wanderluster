@@ -14,3 +14,4 @@ Route::get('/eventtrip', [MenuController::class, 'eventtrip'])->name('eventtrip'
 Route::get('/destination', [MenuController::class, 'destination'])->name('destination');
 Route::get('/tourtravel', [MenuController::class, 'tourtravel'])->name('tourtravel');
 Route::get('/contact', [MenuController::class, 'contact'])->name('contact');
+Route::get('/exhibition', [MenuController::class, 'exhibition'])->name('exhibition');

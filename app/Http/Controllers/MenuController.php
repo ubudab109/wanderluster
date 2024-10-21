@@ -50,6 +50,11 @@ class MenuController extends Controller
         return view('pages.contact');
     }
 
+    public function exhibition()
+    {
+        return view('pages.exhibition');
+    }
+
 
 
     /**

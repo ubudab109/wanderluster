@@ -60,6 +60,7 @@
                         <a class="dropdown-item" href="{{route('grouptour')}}">Group Tours</a>
                         <a class="dropdown-item" href="{{route('personalizetrip')}}">Personalized Trips</a>
                         <a class="dropdown-item" href="{{route('eventtrip')}}">Event Trip</a>
+                        <a class="dropdown-item" href="{{route('exhibition')}}">Exhibition</a>
                     </div>
                 </li>
                 <li class="nav-item">
