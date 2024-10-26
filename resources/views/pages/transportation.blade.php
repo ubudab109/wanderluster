@@ -1,6 +1,5 @@
 @extends('master')
 @section('content')
-    {{-- CONTENT DISINI --}}
 
     <section class="transport" id="ourservices">
         <div class="content-transport">
@@ -11,48 +10,44 @@
         </div>
     </section>
 
-    <div class="serve">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>Our serve Transportation</h2>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a dolorum error sunt
-                            tempora doloribus similique, architecto possimus voluptate perferendis.</span>
-                    </div>
-                </div>
+    <section class="transportation">
+        <div class="center-text">
+            <h2>Our Transportation Serve</h2>
+        </div>
+
+        <div class="transportation-content">
+            <div class="box">
+                <img src="{{ asset('assets/img/plane.jpg') }}" alt="">
+                <h6>Planes</h6>
+                <h4>More than 10+ Air Transportation</h4>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-transportation">
-                        <img src="{{ asset('assets/img/bali.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Plane</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-transportation">
-                        <img src="{{ asset('assets/img/bali.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ship</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-transportation">
-                        <img src="{{ asset('assets/img/bali.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Train</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="box">
+                <img src="{{ asset('assets/img/car.jpg') }}" alt="">
+                <h6 class="khusus">Cars</h6>
+                <h4 class="khusus-h4">Highest quality transportation</h4>
+            </div>
+
+            <div class="box">
+                <img src="{{ asset('assets/img/train.jpg') }}" alt="">
+                <h6>Trains</h6>
+                <h4>Enjoy domestic travel with Trains</h4>
+            </div>
+
+
+        </div>
+
+        <div class="center-textt">
+            <h2>Discover the Ease of Travel <br> Our Premium Transportation Services</h2>
+            <h5>Embark on your next journey with confidence and comfort by choosing our top-tier transportation services. Whether you're planning a family vacation, a business trip, or a solo adventure, we are dedicated to providing you with a seamless and enjoyable travel experience.</h5>
+            <div class="button">
+                <a href="https://wa.link/g0uvk0">Book Now</a>
             </div>
         </div>
+
+
+    </section>
+
+   
+    
 @endsection

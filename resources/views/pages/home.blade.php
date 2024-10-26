@@ -27,7 +27,7 @@
     <div class="content">
         <h3>Bali-Lombok</h3>
         <p>3 Days 2 Night</p>
-        <a href="#" class="btn"> Book Now</a>
+        <a href="https://wa.link/g0uvk0" class="btn"> Book Now</a>
     </div>
 </section>
 <!-- Akhir Home Section -->

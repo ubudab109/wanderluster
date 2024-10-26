@@ -76,7 +76,15 @@ nav .nav-item.dropdown.active.show {
 
 nav .nav-item.dropdown.active.show a {
     color: white !important;
+    background-color: transparent; /* Ensure no background color is set */
+    box-shadow: none; /* Ensure no box shadow is set */
 }
+nav .nav-item.dropdown.active.show a:hover {
+    color: black !important; /* Hover color */
+    background-color: transparent; /* Remove any background color on hover */
+    box-shadow: none; /* Remove any box shadow on hover */
+}
+
 
 .nav-item:hover {
     color: #ff5300 !important;
@@ -164,7 +172,7 @@ section {
     display: flex;
     margin-top: 60px;
     align-items: center;
-    background: url("/assets/img/pura.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/pura.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -201,6 +209,7 @@ section {
     text-wrap: wrap;
     width: 500px;
 }
+
 .home content {
     max-width: 50rem;
 }
@@ -398,6 +407,74 @@ section {
     width: 100px;
 }
 
+/* Style for Group Tours Section */
+.group-tours {
+    padding-top: 100px;
+}
+
+.group-tours .titlepage-group {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.group-tours .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.group-tours .card__image-container {
+    position: relative;
+}
+
+.group-tours .card__image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.group-tours .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.group-tours .card__content-inner {
+    padding: 20px;
+}
+
+.group-tours .card__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.group-tours .card__description {
+    font-size: 16px;
+}
+
+.group-tours .card:hover .card__image-container img {
+    transform: scale(1.1);
+}
+
+.group-tours .card:hover .card__content {
+    opacity: 1;
+}
+
 .titlepage p {
     text-align: left;
     margin-top: -16px;
@@ -543,6 +620,9 @@ footer {
     display: inline-block;
     position: relative;
 }
+
+
+
 .titlepage span {
     color: #141012;
     font-size: 17px;
@@ -577,24 +657,101 @@ footer {
     color: #282727;
 }
 
-.card-transportation .card-body {
-    padding: 20px;
+.center-text {
+    text-align: center;
+    color: #FF5300;
+    padding-top: 20px;
 }
 
-.card-transportation {
-    margin: 15px 10px;
-    border: 1px solid #ddd;
+.center-text h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.transportation-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.box{
+    position: relative;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: brightness(70%);
+    transition: all .3s cubic-bezier(.499,.05,.55,.95);
+    will-change: filter;
+    display: block;
 }
 
-.card-transportation:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.box h6{
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
 }
 
+.box h4{
+    position: absolute;
+    left: 25px;
+    bottom: 65px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box img:hover{
+    filter: brightness(90%) hue-rotate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.center-textt {
+    text-align: center;
+    color: #FF5300;
+    margin-top: 40px;
+}
+
+.center-textt h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.center-textt h5{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #141012;
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-top: 20px; 
+}
+
+.button a {
+    display: inline-block; 
+    padding: 15px 30px; 
+    font-size: 15px; 
+    color: #fff; 
+    background-color: #ff5300; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    margin-bottom: 20px;
+}
+
+.button a:hover {
+    background-color: #faba00;
+}
 .card-img-top {
     width: 100%;
     height: auto;
@@ -606,7 +763,7 @@ footer {
 }
 
 .card-title {
-    font-size: 30px;
+    font-size: 35px;
     color: #ff5300;
     font-weight: bold;
     margin-bottom: 10px;
@@ -625,6 +782,62 @@ footer {
 .col-md-4 {
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.titlepage-group h2{
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #faba00;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 50px;
+    position: relative;
+}
+.titlepage-group p{
+    font-size: 15px;
+    text-align: center;
+    color: #141012;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titlepage-personalize h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #faba00;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 50px;
+    position: relative;
+}
+.titlepage-personalize p{
+    font-size: 15px;
+    text-align: center;
+    color: #141012;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titlepage-event h2{
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #faba00;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 50px;
+    position: relative;
+}
+.titlepage-event p{
+    font-size: 15px;
+    text-align: center;
+    color: #141012;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
 }
 
 /* Section background and padding */
@@ -909,7 +1122,7 @@ footer {
         top: 0;
         right: -10px; /* Jarak pseudo-elemen dari elemen asli */
         width: 32px;
-        height: 110%;
+        height: 101%;
         background: #ff5300; /* Warna bayangan */
         z-index: -1; /* Membuat bayangan di belakang elemen asli */
     }
@@ -958,7 +1171,7 @@ footer {
     }
 
     .img-footer-group {
-        position: initial !important;
+        position: initial;
         width: 100%;
         text-align: center;
         justify-content: center;
@@ -981,6 +1194,61 @@ footer {
         margin-left: 66px;
         height: 200px;
     } */
+
+    .transport .content-transport h3 {
+        font-size: 40px;
+    }
+
+    .transport .content-transport p {
+        font-size: 15px;
+        width: 332px;
+    }
+
+    .transport a.btn-transport {
+        margin-top: 20px;
+        text-align: center;
+        width: 150px;
+        height: 38px;
+        padding: 5px 20px;  
+
+    }
+}
+
+@media (max-width: 500px) {
+    .transport {
+        flex-direction: column;
+        padding: 20px;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .transport .content-transport h3 {
+        font-size: 22px;
+        text-align: left;
+        text-shadow: none;
+    }
+
+    .transport .content-transport p {
+        font-size: 8px;
+        width: 60%;
+        text-align: left;
+    }
+
+    .transport a.btn-transport {
+        margin-top: 0px;
+        text-align: center;
+        width: 98px;
+        height: 22px;
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+
+    
+    .wrapper {
+        padding: 0px;
+        
+    }
 }
 
 /* SHADOW TEXT */
