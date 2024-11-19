@@ -39,13 +39,8 @@
         <div class="col-xl-6 col-lg-12">
             <h1 class="heading">About Us</h1>
             <h2 class="moto mb-3">We bring you the world</h2>
-            <p style="font-size: 18px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error dicta nihil veritatis iusto,
-                similique
-                pariatur, sint fuga asperiores eaque blanditiis possimus culpa quis soluta? Beatae, saepe tempore
-                voluptates
-                labore ipsam molestias reiciendis adipisci quaerat perferendis, vero voluptatibus quo nesciunt corrupti
-                obcaecati laboriosam ratione officia, quibusdam temporibus doloribus totam aperiam!
+            <p  class="lh-sm" style="font-size:18px;">
+                Welcome to Wanderluster, your trusted partner for seamless travel and comprehensive exhibition assistance across Indonesia, Malaysia, and Europe. Our experienced team excels in crafting personalized travel itineraries, handling all aspects from flights and accommodations to ground transportation, and providing top-notch support for trade shows, conferences, and corporate events. We pride ourselves on our commitment to quality, reliability, and individualized attention, ensuring that every client’s unique needs are met with the highest standards of service. Discover the Wanderluster difference and let us take the stress out of your travel and exhibition planning. Contact us today to learn more about how we can assist you in achieving your goals.
             </p>
         </div>
     </div>
